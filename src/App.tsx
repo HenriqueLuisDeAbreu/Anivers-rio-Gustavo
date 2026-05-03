@@ -297,7 +297,7 @@ export default function App() {
               initial={{ scale: 0.8, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.8, y: 20 }}
-              className="relative bg-white w-full max-w-lg overflow-hidden flex flex-col shadow-2xl"
+              className="relative bg-white w-full max-w-lg max-h-[90vh] overflow-y-auto flex flex-col shadow-2xl"
             >
               <button 
                 onClick={() => setIsModalOpen(false)}
@@ -307,7 +307,7 @@ export default function App() {
                 <X size={20} />
               </button>
 
-              <div className="aspect-[4/5] bg-gray-100 overflow-hidden">
+              <div className="aspect-square sm:aspect-[4/5] bg-gray-100 overflow-hidden shrink-0">
                 <img 
                   src="/input_file_0.png" 
                   alt="FELIZ ANIVERSÁRIO GUSTAVO!" 
